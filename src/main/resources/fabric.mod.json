@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "crux",
+  "version": "${version}",
+  "name": "Crux",
+  "description": "Velocity Proxy side of our ZephyriteCore Plugin",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/crux/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.upfault.crux.client.CruxClient"
+    ],
+    "main": [
+      "com.upfault.crux.Crux"
+    ]
+  },
+  "mixins": [
+    "crux.mixins.json",
+    {
+      "config": "crux.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
