@@ -2,29 +2,29 @@ package com.upfault.crux.config.configs;
 
 import dev.isxander.yacl3.config.v2.api.SerialEntry;
 
-public class CoordinatesConfig {
+public class ArmorHUDConfig {
 
 	@SerialEntry
-	private int yPosition = 10;
+	private int xPosition = 0;
 
 	@SerialEntry
-	private int xPosition = 10;
+	private int yPosition = 135;
 
 	@SerialEntry
 	private int scale = 1;
 
 	@SerialEntry
-	private int coordinateColor = 0xffef00;
+	private int durabilityBarColor = 0x5bff01;
 
 	@SerialEntry
 	private boolean rainbowEffect = false;
 
-	public int getScale() {
-		return scale;
+	public int getXPosition() {
+		return xPosition;
 	}
 
-	public void setScale(int scale) {
-		this.scale = scale;
+	public void setXPosition(int xPosition) {
+		this.xPosition = xPosition;
 	}
 
 	public int getYPosition() {
@@ -35,20 +35,20 @@ public class CoordinatesConfig {
 		this.yPosition = yPosition;
 	}
 
-	public int getXPosition() {
-		return xPosition;
+	public int getScale() {
+		return scale;
 	}
 
-	public void setXPosition(int xPosition) {
-		this.xPosition = xPosition;
+	public void setScale(int scale) {
+		this.scale = scale;
 	}
 
-	public int getCoordinateColor() {
-		return coordinateColor;
+	public int getDurabilityBarColor() {
+		return durabilityBarColor;
 	}
 
-	public void setCoordinateColor(int coordinateColor) {
-		this.coordinateColor = coordinateColor;
+	public void setDurabilityBarColor(int durabilityBarColor) {
+		this.durabilityBarColor = durabilityBarColor;
 	}
 
 	public boolean isRainbowEffect() {

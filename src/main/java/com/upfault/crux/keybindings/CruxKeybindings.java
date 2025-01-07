@@ -15,7 +15,7 @@ public class CruxKeybindings implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		openConfigKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-				"key.crux.config", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_O, "category.crux"
+				"key.crux.config", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_O, "key.category.crux"
 		));
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
